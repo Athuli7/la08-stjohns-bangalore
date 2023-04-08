@@ -1,23 +1,15 @@
 @extends('zegen.layouts.layout01')
 @section('content')
 @component('zegen.components.header01', [
+	'variables' => $variables
 ])
 @endcomponent
 <!-- header -->
 <!-- page-header -->
 @component('zegen.components.page-header01', [
-	"path" => [
-		[
-			'name' => 'Orgs',
-			'link' => route('organization_type_index', ["type" => "ministry"])
-		],
-		[
-			'name' => 'Orgs',
-			'link' => route('organization_type_index', ["type" => "ministry"])
-		],
-	],
-	'name' => 'Childs',
-	'link' => route('organization_details', ["type" => "ministry", "slug" => "slug01"])
+	"breadcrumbs" => $breadcrumbs,
+	'page_name' => $page_name,
+	'page_link' => $page_link,
 ])
 @endcomponent
 
@@ -41,7 +33,7 @@
 									<!-- sermon img -->
 									<div class="zoom-gallery">
 										<div class="ministries-thumb relative margin-bottom-35">
-											<img src="images/ministries/single1.jpg" class="img-fluid single-sermon-img b-radius-10" width="1170" height="694" alt="ministries-img" />														
+											<img src="{{ $page->image }}" class="img-fluid single-sermon-img b-radius-10" width="1170" height="694" alt="ministries-img" />														
 										</div>
 									</div>
 								</div>
@@ -52,15 +44,16 @@
 							<div class="row">
 								<!-- Col -->
 								<div class="col-md-12">		
-									<p class="margin-bottom-15">Children’s ministry is the most important ministry in our church. This ministry helps kids learn about the Lord Jesus and how to start a personal relationship with Him. Children come to faith in Jesus through Memory verses, Bible lessons, Singing, and Prayer. Every week, they grow closer to Jesus and learn more about His love and blessings. Buy Zegen Church WordPress Theme today. It is the perfect template for churches. Zegen is specially designed for non-profit churches, modern churches, prayer groups, Christian, charity, volunteering, believer community, non-profit organization, protestant church, volunteer, religious website, and God leadership academy.</p>
-									<p class="margin-bottom-30">Te posse nostro labores pri, agam audire eu mei, natum voluptaria an mel. Ut illud maiestatis nec, vis cu propriae deterruisset. Ea mazim suavitate ius. Ei lorem instructior sea, populo necessitatibus ut est. Ne vix voluptua. Porro deleniti apeirian mea at, nostro referrentur an mei. Wisi alienum ullamcorper ea duo, aperiri apeirian vel ad. Sit eu facer soluta fuisset. Ius magna mazim id. In putant consulatu pri, per persius quaeque perpetua an.Ne fugit essent persequeris sed. Qui dico dicam sadipscing no.</p>
+									{!! Str::markdown($page->content ?? "") !!}
+									<br>
+									<br>
 									<!-- Row -->
 									<div class="row zoom-gallery">												
 										<!-- Col -->
 										<div class="col-md-4">
 										   <div class="ministries-thumb relative">
 												<a class="popup-img" href="images/ministries/single-thumb1.jpg" title="Single Thumb 1">
-													<img src="images/ministries/single-thumb1.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
+													<img src="/images/ministries/single-thumb1.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
 												</a>
 											</div>
 										</div>													
@@ -68,7 +61,7 @@
 										<div class="col-md-4">
 										   <div class="ministries-thumb relative">
 												<a class="popup-img" href="images/ministries/single-thumb2.jpg" title="Single Thumb 2">
-													<img src="images/ministries/single-thumb2.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
+													<img src="/images/ministries/single-thumb2.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
 												</a>	
 											</div>
 										</div>
@@ -76,7 +69,7 @@
 										<div class="col-md-4">
 										   <div class="ministries-thumb relative">
 												<a class="popup-img" href="images/ministries/single-thumb3.jpg" title="Single Thumb 3">
-													<img src="images/ministries/single-thumb3.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
+													<img src="/images/ministries/single-thumb3.jpg" class="img-fluid b-radius-6" width="768" height="512" alt="ministries-img" />
 												</a>	
 											</div>
 										</div>													

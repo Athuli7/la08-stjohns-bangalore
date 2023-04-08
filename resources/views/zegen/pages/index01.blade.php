@@ -1,424 +1,9 @@
 @extends('zegen.layouts.layout01')
 @section('content')
-<header>
-	<!--Mobile Header-->
-	<div class="mobile-header bg-white typo-dark">
-		<div class="mobile-header-inner">
-			<div class="sticky-outer">
-				<div class="sticky-head">
-					<div class="basic-container clearfix">
-						<ul class="nav mobile-header-items pull-left">
-							<li class="nav-item"><a href="#" class="zmm-toggle img-before"><i class="ti-menu"></i></a>
-							</li>
-						</ul>
-						<ul class="nav mobile-header-items pull-center">
-							<li>
-								<a href="index.html" class="img-before"><img src="images/logo-dark.png"
-										class="img-fluid" width="149" height="45" alt="Logo"></a>
-							</li>
-						</ul>
-						<ul class="nav mobile-header-items pull-right">
-							<li class="nav-item"><a href="#" class="img-before overlay-search-switch"><i
-										class="icon-magnifier icons"></i></a></li>
-						</ul>
-					</div>
-					<!-- .basic-container -->
-				</div>
-				<!-- .sticky-head -->
-			</div>
-			<!-- .sticky-outer -->
-		</div>
-		<!-- .mobile-header-inner -->
-	</div>
-	<!-- .mobile-header -->
-	<!--Header-->
-	<div class="header-inner header-1 header-absolute">
-		<!--Topbar-->
-		<div class="topbar relative">
-			<div class="basic-container clearfix">
-				<ul class="nav topbar-items pull-left">
-					<li class="nav-item">
-						<ul class="nav header-info">
-							<li>
-								<div class="header-address typo-white"><span class="ti-location-pin"></span>
-									684 West College St. Sun City, USA</div>
-							</li>
-						</ul>
-					</li>
-				</ul>
-				<ul class="nav topbar-items pull-right">
-					<li class="nav-item">
-						<div class="social-icons typo-white">
-							<a href="#" class="social-fb"><span class="ti-facebook"></span></a>
-							<a href="#" class="social-twitter"><span class="ti-twitter"></span></a>
-							<a href="#" class="social-instagram"><span class="ti-instagram"></span></a>
-							<a href="#" class="social-pinterest"><span class="ti-pinterest"></span></a>
-							<a href="#" class="social-youtube"><span class="ti-youtube"></span></a>
-							<a href="#" class="social-dribble"><span class="ti-dribbble"></span></a>
-						</div>
-					</li>
-					<li><a href="#" class="full-view-switch text-center"><i class="ti-search typo-white"></i></a></li>
-				</ul>
-			</div>
-			<!--Search-->
-			<div class="full-view-wrapper hide">
-				<a href="#" class="close full-view-close"></a>
-				<form class="navbar-form search-form" role="search">
-					<div class="input-group">
-						<input class="form-control" placeholder="Search hit enter.." name="srch-term" type="text">
-					</div>
-				</form>
-			</div>
-		</div>
-		<!--Topbar-->
-		<!--Sticky part-->
-		<div class="sticky-outer">
-			<div class="sticky-head">
-				<!--Navbar-->
-				<nav class="navbar nav-shadow">
-					<div class="basic-container clearfix">
-						<div class="navbar-inner">
-							<!--Overlay Menu Switch-->
-							<ul class="nav navbar-items pull-left">
-								<li class="list-item">
-									<a href="index.html" class="logo-general"><img src="images/logo-light.png"
-											class="img-fluid" width="166" height="50" alt="Logo" /></a>
-									<a href="index.html" class="logo-sticky"><img src="images/logo-dark.png"
-											class="img-fluid" width="166" height="50" alt="Logo" /></a>
-								</li>
-							</ul>
-							<!-- Menu -->
-							<ul class="nav navbar-items pull-right">
-								<!--List Item-->
-								<li class="list-item">
-									<ul class="nav navbar-main menu-white">
-										<li class="active dropdown cus-img-menu dropdown-sub"><a
-												href="index.html">Home</a>
-											<ul
-												class="dropdown-menu mega-dropdown-menu basic-container dropdown-col-5 clearfix">
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index.html">
-																<img src="images/screenshot/home-1.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index.html" class="mega-menu-title">Home</a> /
-																<a href="index-onepage.html"
-																	class="mega-menu-title">Home One
-																	Page</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-2.html">
-																<img src="images/screenshot/home-2.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-2.html" class="mega-menu-title">Home 2</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-3.html">
-																<img src="images/screenshot/home-3.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-3.html" class="mega-menu-title">Home 3</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-4.html">
-																<img src="images/screenshot/home-4.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-4.html" class="mega-menu-title">Home 4</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-5.html">
-																<img src="images/screenshot/home-5.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-5.html" class="mega-menu-title">Home 5</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-6.html">
-																<img src="images/screenshot/home-6.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-6.html" class="mega-menu-title">Home 6</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-7.html">
-																<img src="images/screenshot/home-7.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-7.html" class="mega-menu-title">Home 7</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-8.html">
-																<img src="images/screenshot/home-8.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-8.html" class="mega-menu-title">Home 8</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-9.html">
-																<img src="images/screenshot/home-9.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-9.html" class="mega-menu-title">Home 9</a>
-															</p>
-														</div>
-													</div>
-												</li>
-												<li class="mega-dropdown-col">
-													<div class="img-menu">
-														<!--News Post-->
-														<div class="img-block">
-															<a href="index-10.html">
-																<img src="images/screenshot/home-10.jpg" width='400'
-																	height='500' alt="screenshot-img">
-															</a>
-														</div>
-														<div class="title-wrap">
-															<p><a href="index-10.html" class="mega-menu-title">Home
-																	10</a></p>
-														</div>
-													</div>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown dropdown-sub"><a href="#">Pages</a>
-											<ul class="dropdown-menu">
-												<li><a href="about-us.html">About Us</a></li>
-												<li class="dropdown"><a href="events.html">Events</a>
-													<ul class="dropdown-menu child-dropdown-menu">
-														<li><a href="events.html">Events Default</a></li>
-														<li><a href="events-2.html">Events 2</a></li>
-														<li><a href="events-3.html">Events 3</a></li>
-														<li><a href="event-details.html">Event Details</a>
-														</li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="gallery.html">Gallery</a>
-													<ul class="dropdown-menu child-dropdown-menu">
-														<li><a href="gallery-2-columns.html">Gallery 2
-																Columns</a></li>
-														<li><a href="gallery-3-columns.html">Gallery 3
-																Columns</a></li>
-														<li><a href="gallery-4-columns.html">Gallery 4
-																Columns</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="#">Gallery Single</a>
-													<ul class="dropdown-menu">
-														<li><a href="gallery-standard.html">Standard</a>
-														</li>
-														<li><a href="gallery-video.html">Video</a></li>
-														<li><a href="gallery-audio.html">Audio</a></li>
-														<li><a href="single-gallery.html">Single Gallery</a>
-														</li>
-														<li><a href="google-maps.html">Google Maps</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="our-pastors.html">Our
-														Pastors</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a href="our-pastors-slide.html">Our Pastors
-																Slide</a>
-														</li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="campaigns.html">Campaigns</a>
-													<ul class="dropdown-menu">
-														<li>
-															<a href="donate-now.html">Donate Now</a>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown dropdown-sub"><a href="sermons.html">Sermons</a>
-											<ul class="dropdown-menu">
-												<li class="dropdown">
-													<a href="sermons-grid.html">Sermons Grid</a>
-													<ul class="dropdown-menu">
-														<li><a href="sermons-grid-2.html">Sermons Grid 2</a>
-														</li>
-														<li><a href="sermons-grid-3.html">Sermons Grid 3</a>
-														</li>
-														<li><a href="sermons-grid-4.html">Sermons Grid 4</a>
-														</li>
-													</ul>
-												</li>
-												<li class="dropdown">
-													<a href="sermons.html">Sermon List</a>
-													<ul class="dropdown-menu">
-														<li><a href="sermons-list-left-sidebar.html">Sermons
-																List Left Sidebar</a></li>
-														<li><a href="sermons-list-right-sidebar.html">Sermons
-																List Right Sidebar</a></li>
-													</ul>
-												</li>
-												<li>
-													<a href="sermon-details.html">Sermon Details</a>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown mega-dropdown dropdown-sub relative"><a
-												href="ministries-grid-2.html">Ministries</a>
-											<ul class="dropdown-menu mega-dropdown-menu dropdown-col-2">
-												<li class="mega-dropdown-col"><a href="#"
-														class="text-uppercase theme-color">Ministry
-														Details</a>
-													<ul class="mega-child-dropdown-menu">
-														<li><a href="childrens-ministry.html">Childrens
-																Ministry</a></li>
-														<li><a href="family-ministry.html">Family
-																Ministry</a></li>
-														<li><a href="global-ministry.html">Global
-																Ministry</a></li>
-														<li><a href="music-ministry.html">Music Ministry</a>
-														</li>
-														<li><a href="prison-ministry.html">Prison
-																Ministry</a></li>
-													</ul>
-												</li>
-												<li class="mega-dropdown-col"><a href="#"
-														class="text-uppercase theme-color">Ministry
-														Layouts</a>
-													<ul class="mega-child-dropdown-menu">
-														<li><a href="ministries-grid-2.html">Ministries Grid
-																2</a></li>
-														<li><a href="ministries-grid-3.html">Ministries Grid
-																3</a></li>
-														<li><a href="ministries-grid-4.html">Ministries Grid
-																4</a></li>
-														<li><a href="ministries-left-sidebar.html">Ministries
-																Left Sidebar</a></li>
-														<li><a href="ministries-grid-2.html">Ministries
-																Right Sidebar</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown dropdown-sub"><a href="blog.html">Blog</a>
-											<ul class="dropdown-menu">
-												<li class="dropdown"><a href="blog.html">Blog Grid</a>
-													<ul class="dropdown-menu">
-														<li><a href="blog-grid-right-sidebar.html">Blog Grid
-																2</a></li>
-														<li><a href="blog-grid-3.html">Blog Grid 3</a></li>
-														<li><a href="blog-grid-4.html">Blog Grid 4</a></li>
-														<li><a href="blog-grid-left-sidebar.html">Blog Grid
-																Left Sidebar</a></li>
-														<li><a href="blog-grid-right-sidebar.html">Blog Grid
-																Right Sidebar</a></li>
-													</ul>
-												</li>
-												<li class="dropdown"><a href="blog-masonry-3.html">Blog
-														Masonry</a>
-													<ul class="dropdown-menu">
-														<li><a href="blog-masonry-right-sidebar.html">Blog
-																Masonry 2</a></li>
-														<li><a href="blog-masonry-3.html">Blog Masonry 3</a>
-														</li>
-														<li><a href="blog-masonry-4.html">Blog Masonry 4</a>
-														</li>
-														<li><a href="blog-masonry-left-sidebar.html">Blog
-																Masonry + Left Sidebar</a></li>
-														<li><a href="blog-masonry-right-sidebar.html">Blog
-																Masonry + Right Sidebar</a></li>
-													</ul>
-												</li>
-												<li><a href="blog-single.html">Blog Single</a></li>
-											</ul>
-										</li>
-										<li><a href="contact-us.html">Contact Us</a></li>
-									</ul>
-								</li>
-								<!--List Item End-->
-								<!--List Item-->
-								<li class="list-item">
-									<div class="header-navbar-text-1"><a href="donate-now.html"
-											class="h-donate-btn">Donate</a></div>
-								</li>
-								<!--List Item End-->
-							</ul>
-							<!-- Menu -->
-						</div>
-					</div>
-				</nav>
-			</div>
-			<!--sticky-head-->
-		</div>
-		<!--sticky-outer-->
-	</div>
-</header>
+@component('zegen.components.header01', [
+	'variables' => $variables
+])
+@endcomponent
 <!-- header -->
 <!-- Revolution Slider Section -->
 <p class="rs-p-wp-fix"></p>
@@ -427,13 +12,11 @@
 	<rs-module id="rev_slider_1_1" style="" data-version="6.5.31">
 		<rs-slides>
 			<rs-slide style="position: absolute;" data-key="rs-1" data-title="Web Show"
-				data-thumb="rs-plugin/assets/zmain-slider-1-1536x864-100x100.jpg"
+				data-thumb="/hm/1536x864xGOLD.avif"
 				data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
-				<img src="rs-plugin/assets/dummy.png" alt="Non Profit Wordpress Theme" title="zmain-slider-1.jpg"
+				<img src="/hm/1536x864xGOLD.avif" alt="Non Profit Wordpress Theme" title="zmain-slider-1.jpg"
 					width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload"
-					data-lazyload="rs-plugin/assets/zmain-slider-1-1536x864.jpg" data-parallax="5" data-no-retina>
-				<!--
-				-->
+					data-lazyload="/hm/1536x864xGOLD.avif" data-parallax="5" data-no-retina>
 				<h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text"
 					data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
 					data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;"
@@ -443,8 +26,8 @@
 					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;"
 					data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Poppins';text-transform:uppercase;">
 					God gives us power
-				</h1><!--
-				--><rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" data-type="text"
+				</h1>
+				<rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" data-type="text"
 					data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
 					data-xy="x:c;y:m;yo:-42px,-83px,-64px,-71px;"
 					data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,left,left,left;"
@@ -453,176 +36,39 @@
 					data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
 					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
 					data-frame_999_reverse="x:true;"
-					style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">we help you get
-					things done
-				</rs-layer><!--
-
-				--><rs-layer id="slider-1-slide-1-layer-14" data-type="text" data-rsp_ch="on"
+					style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
+					we help you get things done
+				</rs-layer>
+				<rs-layer id="slider-1-slide-1-layer-14" data-type="text" data-rsp_ch="on"
 					data-xy="x:c;y:m,t,t,t;yo:78px,286px,271px,233px;"
 					data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
 					data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;"
 					data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">Jesus is holy, loving,
-					and worthy of all our
-					worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the
-					Lord Jesus.
-
-				</rs-layer><!--
-
-				--><rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn" data-type="button"
+					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">
+					Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the Lord Jesus.
+				</rs-layer>
+				<rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn" data-type="button"
 					data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,130px,128px,117px;"
 					data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off"
 					data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
 					data-border="bor:3px,3px,3px,3px;" data-frame_0="rX:-70deg;oZ:-50;"
 					data-frame_1="oZ:-50;e:power4.inOut;st:3160;sp:1750;" data-frame_999="o:0;st:w;sR:4640;"
 					data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
-					style="z-index:8;background-color:#bf0a30;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">Contact
-					Us
-				</rs-layer><!--
-
-				--><rs-layer id="slider-1-slide-1-layer-21" data-type="image" data-rsp_ch="on"
+					style="z-index:8;background-color:#bf0a30;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">
+					Contact Us
+				</rs-layer>
+				<rs-layer id="slider-1-slide-1-layer-21" data-type="image" data-rsp_ch="on"
 					data-xy="x:c;yo:228px,95px,91px,90px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
 					data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
 					data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;"
 					data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"><img src="rs-plugin/assets/dummy.png"
-						alt="Non Profit Wordpress Theme" class="tp-rs-img rs-lazyload" width="80" height="80"
-						data-lazyload="rs-plugin/assets/dove.png" data-no-retina>
-				</rs-layer><!--
-			-->
-			</rs-slide>
-			<rs-slide style="position: absolute;" data-key="rs-2" data-title="Web Show"
-				data-thumb="rs-plugin/assets/zmain-slider-3-1536x864-100x100.jpg"
-				data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
-				<img src="rs-plugin/assets/dummy.png" alt="Non Profit Wordpress Theme" title="zmain-slider-3.jpg"
-					width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload"
-					data-lazyload="rs-plugin/assets/zmain-slider-3-1536x864.jpg" data-parallax="5" data-no-retina>
-				<!--
-				-->
-				<h1 id="slider-1-slide-2-layer-2" class="rs-layer Concept-Title" data-type="text"
-					data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
-					data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-32px;"
-					data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
-					data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;"
-					data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
-					data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;"
-					data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;"
-					style="z-index:10;font-family:'Poppins';text-transform:uppercase;">We call, price the
-					lord
-				</h1><!--
-
-				--><rs-layer id="slider-1-slide-2-layer-4" class="Concept-SubTitle" data-type="text"
-					data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
-					data-xy="x:c;y:m;yo:-42px,-47px,-55px,-72px;"
-					data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
-					data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"
-					data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;"
-					data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
-					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
-					data-frame_999_reverse="x:true;"
-					style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">WE'RE BUILDING THEM
-					A HOME
-				</rs-layer><!--
-
-				--><rs-layer id="slider-1-slide-2-layer-14" data-type="text" data-rsp_ch="on"
-					data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,234px;"
-					data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
-					data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;"
-					data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">Jesus is holy, loving,
-					and worthy of all our
-					worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the
-					Lord Jesus.
-
-				</rs-layer><!--
-
-				--><a id="slider-1-slide-2-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="sermons.html" target="_self"
-					data-type="button" data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:177px,156px,128px,118px;"
-					data-text="s:16,16,14,14;l:17;fw:500;a:center;" data-rsp_bd="off"
-					data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
-					data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;"
-					data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;"
-					data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
-					style="z-index:8;background-color:#bf0a30;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">View
-					Sermons
-				</a><!--
-
-				--><rs-layer id="slider-1-slide-2-layer-21" data-type="image" data-rsp_ch="on"
-					data-xy="x:c;yo:228px,133px,102px,89px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
-					data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
-					data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"><img src="rs-plugin/assets/dummy.png"
-						alt="Non Profit Wordpress Theme" class="tp-rs-img rs-lazyload" width="80" height="80"
-						data-lazyload="rs-plugin/assets/loveus.png" data-no-retina>
-				</rs-layer><!--
-			-->
-			</rs-slide>
-			<rs-slide style="position: absolute;" data-key="rs-3" data-title="Web Show"
-				data-thumb="rs-plugin/assets/zmain-slider-2-1536x864-100x100.jpg"
-				data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
-				<img src="rs-plugin/assets/dummy.png" alt="Non Profit Wordpress Theme" title="zmain-slider-2.jpg"
-					width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload"
-					data-lazyload="rs-plugin/assets/zmain-slider-2-1536x864.jpg" data-parallax="5" data-no-retina>
-				<!--
-				-->
-				<h1 id="slider-1-slide-3-layer-2" class="rs-layer Concept-Title" data-type="text"
-					data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
-					data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,0,-10px,-38px;"
-					data-text="w:normal,nowrap,nowrap,normal;s:54,50,45,28;l:52,55,50,30;ls:3px;fw:700;a:center;"
-					data-dim="w:922px,845px,736px,478px;h:62px,auto,auto,35px;" data-padding="b:10;"
-					data-frame_0="sX:2;sY:2;" data-frame_0_mask="u:t;"
-					data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;" data-frame_1_mask="u:t;"
-					data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;" data-frame_999_reverse="x:true;"
-					style="z-index:10;font-family:'Poppins';text-transform:uppercase;">LET'S BRING THEM HOME
-				</h1><!--
-
-				--><rs-layer id="slider-1-slide-3-layer-4" class="Concept-SubTitle" data-type="text"
-					data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
-					data-xy="x:c;y:m;yo:-42px,-47px,-55px,-76px;"
-					data-text="w:normal,nowrap,nowrap,nowrap;s:21,20,20,15;l:21,25,20,20;fw:700;a:center,center,left,left;"
-					data-dim="w:446px,424px,auto,auto;" data-padding="b:10;" data-frame_0="o:1;"
-					data-frame_0_chars="d:5;y:100%;o:0;rZ:-35deg;" data-frame_0_mask="u:t;"
-					data-frame_1="st:640;sp:1200;sR:640;" data-frame_1_chars="e:power4.inOut;d:10;rZ:0deg;"
-					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
-					data-frame_999_reverse="x:true;"
-					style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">YOU CAN HELP FOR
-					THEM
-				</rs-layer><!--
-
-				--><rs-layer id="slider-1-slide-3-layer-14" data-type="text" data-rsp_ch="on"
-					data-xy="x:c;y:m,t,t,t;yo:78px,312px,271px,228px;"
-					data-text="w:normal;s:18,18,16,15;l:31,30,30,27;a:center;"
-					data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;"
-					data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">Zegen Church WordPress
-					Theme comes with
-					sermons, ministries, events, testimonies, staff members, church locations shortcodes to
-					enhance your website.
-				</rs-layer><!--
-
-				--><a id="slider-1-slide-3-layer-16" class="rs-layer res-slide-btn pop rev-btn" href="ministries-grid-2.html"
-					target="_self" data-type="button" data-color="rgba(255,255,255,1)"
-					data-xy="x:c;y:m;yo:162px,156px,128px,112px;" data-text="s:16,16,14,14;l:17;fw:500;a:center;"
-					data-rsp_bd="off" data-padding="t:15,15,10,10;r:35,35,25,25;b:15,15,10,10;l:35,35,25,25;"
-					data-border="bor:3px,3px,3px,3px;" data-frame_0="y:100%;"
-					data-frame_1="e:power4.inOut;st:3160;sp:1200;sR:3160;" data-frame_999="o:0;st:w;sR:4640;"
-					data-frame_hover="bgc:#000;boc:#000;bor:3px,3px,3px,3px;bos:solid;oX:50;oY:50;sp:0;"
-					style="z-index:8;background-color:#bf0a30;font-family:'Poppins';cursor:pointer;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;">View
-					Ministries
-				</a><!--
-
-				--><rs-layer id="slider-1-slide-3-layer-21" data-type="image" data-rsp_ch="on"
-					data-xy="x:c;yo:228px,133px,102px,85px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
-					data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
-					data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"><img src="rs-plugin/assets/dummy.png"
-						alt="Non Profit Wordpress Theme" class="tp-rs-img rs-lazyload" width="80" height="80"
-						data-lazyload="rs-plugin/assets/bible.png" data-no-retina>
-				</rs-layer><!--
-				-->
+					alt="Non Profit Wordpress Theme" class="tp-rs-img rs-lazyload" width="80" height="80"
+					data-lazyload="rs-plugin/assets/dove.png" data-no-retina>
+				</rs-layer>
 			</rs-slide>
 		</rs-slides>
-		<rs-static-layers><!--
-		--></rs-static-layers>
+		<rs-static-layers>
+		</rs-static-layers>
 	</rs-module>
 	<script>
 
@@ -779,7 +225,7 @@
 									<!-- about button -->
 									<div class="text-center">
 										<div class="about-img bf-pattern mb-5 mb-xl-0">
-											<img src="images/about-us/about-1.jpg" class="" alt="about-img">
+											<img src="images/hm/about-1.jpg" class="" alt="about-img">
 										</div>
 										<!-- .col -->
 									</div>

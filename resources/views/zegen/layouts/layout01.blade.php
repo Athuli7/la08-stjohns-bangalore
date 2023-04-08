@@ -257,6 +257,8 @@
 	<script src="{{ asset("js/jquery.appear.min.js") }}"></script>
 	<!-- Theme Custom Js -->
 	<script src="{{ asset("js/custom.js") }}"></script>
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyCTLPC6fhl1bPQpZWox4FkkiSZYmBt5lQ8"></script>
+	<script type="text/javascript" src="js/jquery.gmap.js"></script>
 	<!-- REVOLUTION JS FILES -->
 	<script src="{{ asset("rs-plugin/js/jquery.themepunch.tools.min.js") }}"></script>
 	<script src="{{ asset("rs-plugin/js/jquery.themepunch.revolution.min.js") }}"></script>

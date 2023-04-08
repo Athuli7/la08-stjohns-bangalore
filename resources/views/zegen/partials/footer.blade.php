@@ -1,3 +1,12 @@
+@php
+	$variables = \App\Helpers\VariableHelper::getVariables();
+	$strings = $variables['strings'];
+	$menu = \App\Models\WebsiteMenu::where('slug', 'footer-menu')
+		->whereWebsiteId(config('app.site_id'))
+		->first()
+		->GetNavigatableTree()
+@endphp
+
 <footer id="footer" class="footer footer-1 footer-bg-img" data-bg="{{ asset("images/bg/footer-bg.jpg") }}">
 	<!--Footer Widgets Columns Posibilities 4-->
 	<div class="footer-widgets">
@@ -12,15 +21,14 @@
 						</div>
 						<!-- Text -->
 						<div class="widget-text margin-bottom-30">
-							<p>Zegen Church WordPress Theme is professionaly designed for non-profit church, modern
-								church, prayer group, Christian, charity, non-profit organization. Grab it soon!</p>
+							<p>{{ VariableHelper::getTextblock('footer_about') }}</p>
 						</div>
 						<div class="social-icons">
-							<a href="#" class="social-fb"><span class="ti-facebook"></span></a>
-							<a href="#" class="social-twitter"><span class="ti-twitter"></span></a>
-							<a href="#" class="social-instagram"><span class="ti-instagram"></span></a>
-							<a href="#" class="social-pinterest"><span class="ti-pinterest"></span></a>
-							<a href="#" class="social-youtube"><span class="ti-youtube"></span></a>
+							<a href="{{ $strings['facebook_link'] ?? "" }}" class="social-fb"><span class="ti-facebook"></span></a>
+							<a href="{{ $strings['twitter_link'] ?? "" }}" class="social-twitter"><span class="ti-twitter"></span></a>
+							<a href="{{ $strings['instagram_link'] ?? "" }}" class="social-instagram"><span class="ti-instagram"></span></a>
+							<a href="{{ $strings['pintrest_link'] ?? "" }}" class="social-pinterest"><span class="ti-pinterest"></span></a>
+							<a href="{{ $strings['youtube_link'] ?? "" }}" class="social-youtube"><span class="ti-youtube"></span></a>
 						</div>
 					</div>
 					<!-- Col -->
@@ -32,11 +40,9 @@
 						<!-- Text -->
 						<div class="menu-quick-links">
 							<ul class="menu">
-								<li class="menu-item"><a href="#">Who We Are?</a></li>
-								<li class="menu-item"><a href="#">Support and FAQ’s</a></li>
-								<li class="menu-item"><a href="#">Payments</a></li>
-								<li class="menu-item"><a href="#">Donations Terms</a></li>
-								<li class="menu-item"><a href="#">Volunteer</a></li>
+								@foreach ($menu as $item)
+									<li class="menu-item"><a href="{{ \App\Helpers\URLHelper::getRoutableURL($item) }}">{{ $item->name }}</a></li>
+								@endforeach
 							</ul>
 						</div>
 					</div>
@@ -80,8 +86,7 @@
 							<!-- Title -->
 							<h3 class="title typo-white">Newsletter</h3>
 						</div>
-						<p>Sign up for our weekly newsletter to stay updated on all news and events at Zegen Church.
-							Email updates on new product Announcements, Gift Ideas, Special Promotions and More.</p>
+						<p>{{ VariableHelper::getTextblock('footer_newsletter_signup', 'Sign up for our weekly newsletter to stay updated on all news and events at the Church. Email updates on new Announcements.') }}</p>
 						<div class="mailchimp-widget-wrap">
 							<!-- subscribe form -->
 							<form id="subscribe-form-1" class="subscribe-form" action="inc/function.php">
@@ -120,10 +125,7 @@
 								<a href="#">Privacy</a>
 							</li>
 							<li class="nav-item">
-								<a href="#">Sermons</a>
-							</li>
-							<li class="nav-item">
-								<a href="#">Contact Us</a>
+								<a href="{{ route('contact') }}">Contact Us</a>
 							</li>
 						</ul>
 					</div>

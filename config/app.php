@@ -16,6 +16,9 @@ return [
 	'locale' => 'en',
 	'fallback_locale' => 'en',
 	'faker_locale' => 'en_US',
+
+	'site_id' => (int)env('SITE_ID'),
+	'tenant_id' => (int)env('TENANT_ID'),
 	'site_short_name' => env('SITE_SHORT_NAME', ''),
 	'site_long_name' => env('SITE_LONG_NAME', ''),
 	'zegen' => [
@@ -26,6 +29,10 @@ return [
 	'routing' => [
 		'public_pages' => env('ROUTING_PREFIX_PUBLIC_PAGES', 'pages'),
 		'organizations' => env('ROUTING_PREFIX_ORGS', 'orgs'),
+	],
+	'pretty_name' => [
+		'public_pages' => env('PRETTY_NAME_PUBLIC_PAGES', 'Pages'),
+		'organizations' => env('PRETTY_NAME_PREFIX_ORGS', 'Organizations'),
 	],
 
 	/*
@@ -114,5 +121,6 @@ return [
 
 	'aliases' => Facade::defaultAliases()->merge([
 		// 'ExampleClass' => App\Example\ExampleClass::class,
+		'VariableHelper' => App\Helpers\VariableHelper::class,
 	])->toArray(),
 ];
