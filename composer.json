@@ -25,16 +25,16 @@
 		"phpunit/phpunit": "^10.0",
 		"spatie/laravel-ignition": "^2.0"
 	},
-	"repositories": [
-		{
+	"repositories": {
+		"local": {
 			"type": "path",
 			"url": "../pp01-ths-shared"
 		},
-		{
+		"repman": {
 			"type": "composer",
 			"url": "https://hamanahel.repo.repman.io"
 		}
-	],
+	},
 	"autoload": {
 		"psr-4": {
 			"App\\": "app/",
