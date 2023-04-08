@@ -12,11 +12,11 @@
 	<rs-module id="rev_slider_1_1" style="" data-version="6.5.31">
 		<rs-slides>
 			<rs-slide style="position: absolute;" data-key="rs-1" data-title="Web Show"
-				data-thumb="/hm/1536x864xGOLD.avif"
+				data-thumb="{{ asset('/hm/old/1536x864x0.avif') }}"
 				data-anim="adpr:false;e:slidingoverlay;ms:2000;" data-in="o:1;x:(100%);" data-out="a:false;">
-				<img src="/hm/1536x864xGOLD.avif" alt="Non Profit Wordpress Theme" title="zmain-slider-1.jpg"
+				<img src="{{ asset('/hm/old/1536x864x0.avif') }}" alt="Non Profit Wordpress Theme" title="zmain-slider-1.jpg"
 					width="1536" height="864" class="rev-slidebg tp-rs-img rs-lazyload"
-					data-lazyload="/hm/1536x864xGOLD.avif" data-parallax="5" data-no-retina>
+					data-lazyload="{{ asset('/hm/old/1536x864x0.avif') }}" data-parallax="5" data-no-retina>
 				<h1 id="slider-1-slide-1-layer-2" class="rs-layer Concept-Title" data-type="text"
 					data-color="#ffffff||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)||rgba(255, 255, 255, 1)"
 					data-rsp_ch="on" data-xy="x:c;y:m;yo:10px,-26px,-10px,-33px;"
@@ -25,7 +25,7 @@
 					data-frame_0_mask="u:t;" data-frame_1="e:power2.out;st:2110;sp:1270;sR:2110;"
 					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:5620;"
 					data-frame_999_reverse="x:true;" style="z-index:10;font-family:'Poppins';text-transform:uppercase;">
-					God gives us power
+					Serve one another
 				</h1>
 				<rs-layer id="slider-1-slide-1-layer-4" class="Concept-SubTitle" data-type="text"
 					data-color="#bf0a30||#e9204f||#e9204f||#e9204f" data-rsp_ch="on"
@@ -45,7 +45,7 @@
 					data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;"
 					data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
 					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">
-					Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Zegen Church. Join us and Praise the Lord Jesus.
+					Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Church. Join us and Praise the Lord Jesus.
 				</rs-layer>
 				<rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn" data-type="button"
 					data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,130px,128px,117px;"
@@ -61,18 +61,15 @@
 					data-xy="x:c;yo:228px,95px,91px,90px;" data-text="w:normal;s:20,16,12,7;l:0,20,15,9;"
 					data-dim="w:67px,60px,56px,45px;h:67px,60px,56px,45px;" data-frame_0="x:100%;"
 					data-frame_0_mask="u:t;" data-frame_1="st:210;sp:1000;sR:210;" data-frame_1_mask="u:t;"
-					data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"><img src="rs-plugin/assets/dummy.png"
+					data-frame_999="o:0;st:w;sR:7790;" style="z-index:12;"><img src="{{ asset('rs-plugin/assets/dummy.png') }}""
 					alt="Non Profit Wordpress Theme" class="tp-rs-img rs-lazyload" width="80" height="80"
-					data-lazyload="rs-plugin/assets/dove.png" data-no-retina>
+					data-lazyload="{{ asset('rs-plugin/assets/dove.png') }}" data-no-retina>
 				</rs-layer>
 			</rs-slide>
 		</rs-slides>
 		<rs-static-layers>
 		</rs-static-layers>
 	</rs-module>
-	<script>
-
-	</script>
 	<script>
 		if (typeof revslider_showDoubleJqueryError === "undefined") {
 			function revslider_showDoubleJqueryError(sliderID) {
@@ -104,18 +101,15 @@
 							<div class="events-inner">
 								<div class="events-item">
 									<div class="media">
-										<div class="event-date me-4">Jan 3<span class="event-time">8.00
-												am</span>
+										<div class="event-date me-4">Jan 3<span class="event-time">8.00 am</span>
 										</div>
 										<div class="media-body">
 											<!-- Ministries Content -->
 											<div class="event-content">
 												<div class="event-title">
-													<h5><a href="event-details.html">Our Sponsorship Meetup
-															Will Be Held Again</a></h5>
+													<h5><a href="event-details.html">Our Sponsorship Meetup Will Be Held Again</a></h5>
 												</div>
-												<div class="read-more"><a href="event-details.html">Event
-														Details</a></div>
+												<div class="read-more"><a href="event-details.html">Event Details</a></div>
 											</div>
 										</div>
 									</div>
@@ -130,18 +124,15 @@
 							<div class="events-inner">
 								<div class="events-item">
 									<div class="media">
-										<div class="event-date me-4">Feb 12<span class="event-time">7.00
-												am</span>
+										<div class="event-date me-4">Feb 12<span class="event-time">7.00 am</span>
 										</div>
 										<div class="media-body">
 											<!-- Ministries Content -->
 											<div class="event-content">
 												<div class="event-title">
-													<h5><a href="event-details.html">Event: Reflect The
-															Community And Serving</a></h5>
+													<h5><a href="event-details.html">Event: Reflect The Community And Serving</a></h5>
 												</div>
-												<div class="read-more"><a href="event-details.html">Event
-														Details</a></div>
+												<div class="read-more"><a href="event-details.html">Event Details</a></div>
 											</div>
 										</div>
 									</div>
@@ -225,7 +216,9 @@
 									<!-- about button -->
 									<div class="text-center">
 										<div class="about-img bf-pattern mb-5 mb-xl-0">
-											<img src="images/hm/about-1.jpg" class="" alt="about-img">
+											{{-- <img src="{{ asset('hm/d2e07f34-906e-42e8-9efa-05dd3ae64727/483x497.avif') }}" class="" alt="about-img"> --}}
+											<img src="https://imagedelivery.net/roFwfALiJNh8cGMyjn0Wng/11a4d5cc-4722-42da-549e-d61eedd31700/w=483,fit=cover,h=497" class="" alt="about-img">
+											
 										</div>
 										<!-- .col -->
 									</div>
@@ -246,7 +239,7 @@
 								<span class="border-bottom"></span>
 							</div>
 							<div class="pad-top-15">
-								<p class="margin-bottom-20">We welcome you with great joy to Zegen Church.
+								<p class="margin-bottom-20">We welcome you with great joy to Church.
 									We are here to share the great news of Jesus Christ to all that will
 									listen.</p>
 								<p class="styled-text">The name of the Lord is a strong tower; the righteous
@@ -265,7 +258,7 @@
 											<div class="feature-title relative margin-bottom-15">
 												<h4>Place Of Heaven</h4>
 											</div>
-											<p class="mb-0">In Zegen you will feel divinity, piety,
+											<p class="mb-0">Here, you will feel divinity, piety,
 												goodness, faith or right beliefs.</p>
 										</div>
 									</div>
@@ -304,7 +297,7 @@
 		</section>
 		<!-- About Section End -->
 		<!-- Get a Quote Section -->
-		<section id="get-quote-section" class="get-quote-section section-bg-img" data-bg="images/bg/bg-1.jpg">
+		<section id="get-quote-section" class="get-quote-section section-bg-img" data-bg="{{ asset('hm/85e9e64b-3775-450d-970a-716f57ed50a9/1600x800.avif') }}">
 			<div class="container">
 				<!-- Row -->
 				<div class="row text-center">
@@ -318,8 +311,7 @@
 									<!-- video button -->
 									<div class="video-play-btn text-center">
 										<div class="video-icon">
-											<a class="popup-youtube box-shadow1"
-												href="https://www.youtube.com/watch?v=e1l1-LWTcBs">
+											<a class="popup-youtube box-shadow1" href="https://www.youtube.com/watch?v=YQFVDCCXpoI">
 												<i class="ti-heart"></i>
 											</a>
 										</div>
@@ -330,14 +322,11 @@
 							<!-- video wrap end -->
 							<div class="title-wrap mb-0">
 								<div class="section-title typo-white margin-bottom-40">
-									<h2 class="title mb-3">“Pray! And listen to God! You can do this alone,
-										but find somebody to do it with you”</h2>
-									<span class="dancing-text">Real Story Cross Journey from Anna
-										Hampton</span>
+									<h2 class="title mb-3">Restoration and Refurbishment of St. John’s Church, Bangalore – February 2022</h2>
+									<span class="dancing-text">“Track the progress”</span>
 								</div>
 								<div class="get-quote-btn">
-									<a class="btn btn-default" href="donate-now.html" title="Donate Online">Donate
-										Online</a>
+									<a class="btn btn-default" href="{{ route('donate') }}" title="Donate">Donate</a>
 								</div>
 							</div>
 						</div>
@@ -367,123 +356,33 @@
 					<div class="owl-carousel ministries-main-wrapper" data-loop="1" data-nav="1" data-dots="0"
 						data-autoplay="0" data-autoplaypause="1" data-autoplaytime="5000" data-smartspeed="1000"
 						data-margin="30" data-items="3" data-items-tab="2" data-items-mob="1">
-						<!--Item-->
-						<div class="item">
-							<div class="ministries-box-style-2">
-								<!-- Ministries Inner -->
-								<div class="ministries-inner">
-									<div class="ministries-thumb">
-										<img class="img-fluid squared w-100"
-											src="images/ministries/childrens_ministry.jpg" width="360" height="240"
-											alt="Agricultural Processing">
-									</div>
-									<!-- Ministries Content -->
-									<div class="ministries-content pad-30">
-										<div class="ministries-title margin-bottom-15">
-											<h4><a href="childrens-ministry.html" class="ministries-link">Children's
-													Ministry</a></h4>
+						@foreach (\App\Models\Organization::get() as $org)
+							<!--Item-->
+							<div class="item">
+								<div class="ministries-box-style-2">
+									<!-- Ministries Inner -->
+									<div class="ministries-inner">
+										<div class="ministries-thumb">
+											<img class="img-fluid squared w-100" src="{{ $org->WebsitePage->image ?? $org->image ?? "#" }}" width="360" height="240" alt="{{ $org->name }}">
 										</div>
-										<div class="ministries-desc">
-											<p>Children’s ministry is the most important ministry in our
-												church. This ministry helps kids learn about the Lord</p>
-										</div>
-										<div class="ministries-link margin-top-20">
-											<a target="_blank" href="childrens-ministry.html" class="link">Read More</a>
+										<!-- Ministries Content -->
+										<div class="ministries-content pad-30">
+											<div class="ministries-title margin-bottom-15">
+												<h4><a href="{{ route('organization_details', ['slug' => $org->slug]) }}" class="ministries-link">{{ $org->name }}</a></h4>
+											</div>
+											<div class="ministries-desc">
+												<p>{{ $org->name }}</p>
+											</div>
+											<div class="ministries-link margin-top-20">
+												<a target="_blank" href="{{ route('organization_details', ['slug' => $org->slug]) }}" class="link">Read More</a>
+											</div>
 										</div>
 									</div>
+									<!-- Ministries Inner Ends -->
 								</div>
-								<!-- Ministries Inner Ends -->
 							</div>
-						</div>
-						<!--Item Ends-->
-						<!--Item-->
-						<div class="item">
-							<div class="ministries-box-style-2">
-								<!-- Ministries Inner -->
-								<div class="ministries-inner">
-									<div class="ministries-thumb">
-										<img class="img-fluid squared w-100" src="images/ministries/women_ministry.jpg"
-											width="360" height="240" alt="Agricultural Processing">
-									</div>
-									<!-- Ministries Content -->
-									<div class="ministries-content pad-30">
-										<div class="ministries-title margin-bottom-15">
-											<h4><a href="womens-ministry.html" class="ministries-link">Womens
-													Ministry</a></h4>
-										</div>
-										<div class="ministries-desc">
-											<p>A Women’s ministry includes hosting Bible studies, services,
-												support group, and gathering events. The goal of this
-												women’s</p>
-										</div>
-										<div class="ministries-link margin-top-20">
-											<a target="_blank" href="womens-ministry.html" class="link">Read
-												More</a>
-										</div>
-									</div>
-								</div>
-								<!-- Ministries Inner Ends -->
-							</div>
-						</div>
-						<!--Item Ends-->
-						<!--Item-->
-						<div class="item">
-							<div class="ministries-box-style-2">
-								<!-- Ministries Inner -->
-								<div class="ministries-inner">
-									<div class="ministries-thumb">
-										<img class="img-fluid squared w-100" src="images/ministries/global_ministry.jpg"
-											width="360" height="240" alt="Agricultural Processing">
-									</div>
-									<!-- Ministries Content -->
-									<div class="ministries-content pad-30">
-										<div class="ministries-title margin-bottom-15">
-											<h4><a href="global-ministry.html" class="ministries-link">Global
-													Ministry</a></h4>
-										</div>
-										<div class="ministries-desc">
-											<p>We are very grateful for our part in the work of Global
-												Ministries and the opportunity to be</p>
-										</div>
-										<div class="ministries-link margin-top-20">
-											<a target="_blank" href="global-ministry.html" class="link">Read
-												More</a>
-										</div>
-									</div>
-								</div>
-								<!-- Ministries Inner Ends -->
-							</div>
-						</div>
-						<!--Item Ends-->
-						<!--Item-->
-						<div class="item">
-							<div class="ministries-box-style-2">
-								<!-- Ministries Inner -->
-								<div class="ministries-inner">
-									<div class="ministries-thumb">
-										<img class="img-fluid squared w-100" src="images/ministries/music_ministry.jpg"
-											width="360" height="240" alt="Agricultural Processing">
-									</div>
-									<!-- Ministries Content -->
-									<div class="ministries-content pad-30">
-										<div class="ministries-title margin-bottom-15">
-											<h4><a href="music-ministry.html" class="ministries-link">Music
-													Ministry</a></h4>
-										</div>
-										<div class="ministries-desc">
-											<p>Music is something we get exposed to from childhood through
-												adulthood. From the pattering sounds from raindrops</p>
-										</div>
-										<div class="ministries-link margin-top-20">
-											<a target="_blank" href="music-ministry.html" class="link">Read
-												More</a>
-										</div>
-									</div>
-								</div>
-								<!-- Ministries Inner Ends -->
-							</div>
-						</div>
-						<!--Item Ends-->
+							<!--Item Ends-->
+						@endforeach
 					</div>
 					<!--Ministries Owl Slider-->
 				</div>
@@ -493,8 +392,7 @@
 		</section>
 		<!-- Ministries Section End -->
 		<!-- Contact Section -->
-		<section class="contact-form-section typo-white section-bg-img o-visible pad-top-80 pad-bottom-160"
-			data-bg="images/bg/bg-2.jpg">
+		<section class="contact-form-section typo-white section-bg-img o-visible pad-top-80 pad-bottom-160" data-bg="{{ asset('hm/d191c29c-58dc-4457-a9c8-8677ba57608a/1600x800.avif') }}">
 			<div class="shape-bottom" data-negative="false">
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
 					<path class="shape-fill" opacity="0.33"
@@ -520,18 +418,18 @@
 									</div>
 									<h3 class="flip-box-title margin-bottom-30">Call Us</h3>
 									<div class="flip-content">
-										<p>684 West College St. Sun City, USA.</p>
-										<p><a href="tel:+8(123)985789">+8 (123) 985 789</a></p>
-										<p><a href="mailto:zegenchurch@mail.com">zegenchurch@mail.com</a>
+										<p>{{ VariableHelper::getTextblock('tenant_address') }}</p>
+										<p><a href="tel:{{ $variables['strings']['tenant_phone_02'] ?? "#" }}">{{ $variables['strings']['tenant_phone_02'] ?? "#" }}</a></p>
+										<p><a href="mailto:{{ $variables['strings']['tenant_email_02'] ?? "# "}}">{{ $variables['strings']['tenant_email_02'] ?? "#" }}</a>
 										</p>
 									</div>
 								</div>
 								<div class="flip-box-back">
 									<h3 class="flip-box-title">Call Us</h3>
 									<div class="flip-content">
-										<p>684 West College St. Sun City, USA.</p>
-										<p><a href="tel:+8(123)985789">+8 (123) 985 789</a></p>
-										<p><a href="mailto:zegenchurch@mail.com">zegenchurch@mail.com</a>
+										<p>{{ VariableHelper::getTextblock('tenant_address') }}</p>
+										<p><a href="tel:{{ $variables['strings']['tenant_phone_01'] ?? "#" }}">{{ $variables['strings']['tenant_phone_01'] ?? "#" }}</a></p>
+										<p><a href="mailto:{{ $variables['strings']['tenant_email_01'] ?? "#" }}">{{ $variables['strings']['tenant_email_01'] ?? "#" }}</a>
 										</p>
 									</div>
 								</div>
@@ -548,14 +446,11 @@
 									<span class="border-bottom"></span>
 								</div>
 								<div class="pad-top-15">
-									<p class="margin-bottom-10">Feel free to Contact Us. Zegen Church WP
-										Theme comes with sermons, ministries, events, testimonies, staff
-										members, church locations shortcodes to enhance your website.</p>
+									<p class="margin-bottom-10">Feel free to Contact Us.</p>
 								</div>
 							</div>
 							<div class="button-section margin-top-25">
-								<a class="btn btn-default" href="contact-us.html" title="Learn More">Contact
-									Us</a>
+								<a class="btn btn-default" href="contact-us.html" title="Learn More">Contact Us</a>
 							</div>
 						</div>
 					</div>
@@ -588,7 +483,7 @@
 									<!--Blog Inner-->
 									<div class="blog-inner">
 										<div class="blog-thumb relative">
-											<img src="images/blog/blog-grid/blog-grid1.jpg" class="img-fluid"
+											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
 												width="768" height="600" alt="blog-img" />
 											<div class="top-meta">
 												<ul class="top-meta-list">
@@ -622,7 +517,7 @@
 									<!--Blog Inner-->
 									<div class="blog-inner">
 										<div class="blog-thumb relative">
-											<img src="images/blog/blog-grid/blog-grid2.jpg" class="img-fluid"
+											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
 												width="768" height="600" alt="blog-img" />
 											<div class="top-meta">
 												<ul class="top-meta-list">
@@ -656,14 +551,16 @@
 									<!--Blog Inner-->
 									<div class="blog-inner">
 										<div class="blog-thumb relative">
-											<img src="images/blog/blog-grid/blog-grid3.jpg" class="img-fluid"
+											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
 												width="768" height="600" alt="blog-img" />
 											<div class="top-meta">
 												<ul class="top-meta-list">
 													<li>
-														<div class="post-date"><a href="blog-single.html"><i
-																	class="ti-calendar"></i> Oct 20,
-																2019</a></div>
+														<div class="post-date">
+															<a href="blog-single.html">
+																<i class="ti-calendar"></i> Apr 16, 2023
+															</a>
+														</div>
 													</li>
 												</ul>
 											</div>
@@ -671,8 +568,7 @@
 										<div class="blog-details">
 											<div class="blog-title">
 												<h4 class="margin-bottom-10"><a href="blog-single.html"
-														class="blog-name">Help End the Water Crisis For
-														Families</a></h4>
+														class="blog-name">Confirmation classes starting on 16.4.2023</a></h4>
 											</div>
 											<div class="post-desc mt-2">
 												<div class="blog-link">
@@ -690,7 +586,7 @@
 									<!--Blog Inner-->
 									<div class="blog-inner">
 										<div class="blog-thumb relative">
-											<img src="images/blog/blog-grid/blog-grid4.jpg" class="img-fluid"
+											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
 												width="768" height="600" alt="blog-img" />
 											<div class="top-meta">
 												<ul class="top-meta-list">

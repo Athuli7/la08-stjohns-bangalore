@@ -17,7 +17,7 @@
 						<ul class="nav mobile-header-items pull-center">
 							<li>
 								<a href="{{ route('home') }}" class="img-before">
-									<img src="{{ $variables['strings']['logo_dark'] ?? "" }}" class="img-fluid" width="149" height="45" alt="Logo">
+									<img src="{{ asset($variables['strings']['logo_dark'] ?? "") }}" class="img-fluid" width="149" height="45" alt="Logo">
 								</a>
 							</li>
 						</ul>
@@ -46,8 +46,8 @@
 							<!--Overlay Menu Switch-->
 							<ul class="nav navbar-items pull-left">
 								<li class="list-item">
-									<a href="{{ route('home') }}" class="logo-general"><img src="{{ $variables['strings']['logo_dark'] ?? "" }}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
-									<a href="{{ route('home') }}" class="logo-sticky"><img src="{{ $variables['strings']['logo_dark'] ?? "" }}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+									<a href="{{ route('home') }}" class="logo-general"><img src="{{ asset($variables['strings']['logo_dark'] ?? "") }}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
+									<a href="{{ route('home') }}" class="logo-sticky"><img src="{{ asset($variables['strings']['logo_dark'] ?? "") }}" class="img-fluid" width="166" height="50" alt="Logo" /></a>
 								</li>
 							</ul>
 							<!-- Menu -->

@@ -17,7 +17,8 @@ environments:
     # octane-database-session-ttl: 10
     build:
       - "rm -rf src_files"
-      - composer config --global --auth http-basic.hamanahel.repo.repman.io token e7c9515b89474b36948292cd7d8528370d58007fd2c94e5a89d5bb610f3b3957
+      - composer config --auth http-basic.hamanahel.repo.repman.io token e7c9515b89474b36948292cd7d8528370d58007fd2c94e5a89d5bb610f3b3957
+      - composer config --unset repositories.local
       - composer remove hamanahel/ths-shared
       - composer require hamanahel/ths-shared
       - "COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev"

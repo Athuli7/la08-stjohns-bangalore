@@ -17,7 +17,7 @@
 					<div class="col-lg-3 widget text-widget">
 						<div class="widget-title">
 							<!-- Title -->
-							<h3 class="title typo-white">About Zegen</h3>
+							<h3 class="title typo-white">About St. John's</h3>
 						</div>
 						<!-- Text -->
 						<div class="widget-text margin-bottom-30">
@@ -89,7 +89,7 @@
 						<p>{{ VariableHelper::getTextblock('footer_newsletter_signup', 'Sign up for our weekly newsletter to stay updated on all news and events at the Church. Email updates on new Announcements.') }}</p>
 						<div class="mailchimp-widget-wrap">
 							<!-- subscribe form -->
-							<form id="subscribe-form-1" class="subscribe-form" action="inc/function.php">
+							<form id="subscribe-form-1" class="subscribe-form">
 								<div class="input-group add-on">
 									<input type="text" class="form-control" name="mcemail" autocomplete="off"
 										id="mcemail-1" placeholder="Email Address">
