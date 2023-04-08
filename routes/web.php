@@ -25,6 +25,8 @@ Route::get('/' . config('app.routing.public_pages'), 					[PageController01::cla
 Route::get('/' . config('app.routing.public_pages') . '/{slug}',		[PageController01::class, 'public_page_details'])->name('public_page_details');
 Route::get('/' . config('app.routing.organizations'), 					[PageController01::class, 'organization_index'])->name('organization_index');
 Route::get('/' . config('app.routing.organizations') . '/{slug}', 		[PageController01::class, 'organization_details'])->name('organization_details');
+Route::get('/' . config('app.routing.posts'), 							[PageController01::class, 'post_index'])->name('post_index');
+Route::get('/' . config('app.routing.posts') . '/{slug}', 				[PageController01::class, 'post_details'])->name('post_details');
 
 Route::get('/tree', function () {
 	return response()->json(WebsiteMenu::first()->GetNavigatableTree());

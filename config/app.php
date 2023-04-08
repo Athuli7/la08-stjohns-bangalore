@@ -29,10 +29,12 @@ return [
 	'routing' => [
 		'public_pages' => env('ROUTING_PREFIX_PUBLIC_PAGES', 'pages'),
 		'organizations' => env('ROUTING_PREFIX_ORGS', 'orgs'),
+		'posts' => env('ROUTING_PREFIX_POST', 'posts'),
 	],
 	'pretty_name' => [
 		'public_pages' => env('PRETTY_NAME_PUBLIC_PAGES', 'Pages'),
 		'organizations' => env('PRETTY_NAME_PREFIX_ORGS', 'Organizations'),
+		'posts' => env('PRETTY_NAME_POSTS', 'Posts'),
 	],
 
 	/*

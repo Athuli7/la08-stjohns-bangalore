@@ -54,29 +54,18 @@
 						</div>
 						<nav>
 							<ul class="footer-list-posts">
-								<!-- List Items -->
+								@foreach (\App\Models\WebsitePost::where('website_id', config('app.site_id'))->limit(2)->get() as $post)
+									
 								<li>
 									<div class="side-image">
-										<a href="blog-single.html"><img width="80" height="80"
-												src="images/blog/thumb/blog_thumb1-80x80.jpg"
-												class="img-responsive wp-post-image" alt="Blog"></a>
+										<a href="{{ route('post_details', ['slug' => $post->slug]) }}"><img width="80" height="80" src="{{ $post->image }}" class="img-responsive wp-post-image" alt="Blog"></a>
 									</div>
-									<div class="side-item-text"><a href="blog-single.html">Giving Back – Uganda
-											Training Centers</a>
-										<span class="post-date d-block">Oct 21, 2019</span>
+									<div class="side-item-text"><a href="{{ route('post_details', ['slug' => $post->slug]) }}">{{ $post->name }}</a>
+										<span class="post-date d-block">{{ $post->published->format('M d, Y') }}</span>
 									</div>
 								</li>
-								<li>
-									<div class="side-image">
-										<a href="blog-single.html"><img width="80" height="80"
-												src="images/blog/thumb/blog_thumb2-80x80.jpg"
-												class="img-responsive wp-post-image" alt="Blog"></a>
-									</div>
-									<div class="side-item-text"><a href="blog-single.html">Spirit Of The Lord Is,
-											From The New Life</a>
-										<span class="post-date d-block">Oct 21, 2019</span>
-									</div>
-								</li>
+								
+								@endforeach
 							</ul>
 						</nav>
 					</div>

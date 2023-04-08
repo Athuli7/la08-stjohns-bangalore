@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Website;
 use App\Models\WebsitePage;
+use App\Models\WebsitePost;
 use App\Models\Organization;
 use Illuminate\Http\Request;
 use App\Helpers\VariableHelper;
@@ -64,6 +65,26 @@ class PageController01 extends Controller
 			"page_link" => route('public_page_details', ["slug" => $slug]),
 			'slug' => $slug,
 			'page' => $page,
+			'variables' => VariableHelper::getVariables(),
+		]);
+	}
+	public function post_details($slug, Request $req)
+	{
+		$post = WebsitePost::WhenWebsite(config('app.site_id'))
+			->where('slug', $slug)->first();
+		if (is_null($post))
+			abort(404);
+		return view('zegen.pages.blog', [
+			'breadcrumbs' => [
+				[
+					'name' => config('app.pretty_name.posts'),
+					'link' => route('post_index')
+				],
+			],
+			"page_name" => $post->name,
+			"page_link" => route('post_details', ["slug" => $slug]),
+			'slug' => $slug,
+			'post' => $post,
 			'variables' => VariableHelper::getVariables(),
 		]);
 	}

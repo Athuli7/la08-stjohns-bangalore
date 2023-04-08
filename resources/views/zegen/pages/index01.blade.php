@@ -37,7 +37,7 @@
 					data-frame_1_mask="u:t;" data-frame_999="x:left;e:power3.in;st:w;sp:1000;sR:4960;"
 					data-frame_999_reverse="x:true;"
 					style="z-index:11;font-family:'Open Sans';text-transform:uppercase;">
-					we help you get things done
+					{{-- we help you get things done --}}
 				</rs-layer>
 				<rs-layer id="slider-1-slide-1-layer-14" data-type="text" data-rsp_ch="on"
 					data-xy="x:c;y:m,t,t,t;yo:78px,286px,271px,233px;"
@@ -45,7 +45,7 @@
 					data-dim="w:806px,805px,689px,388px;h:auto,auto,auto,89px;" data-frame_0="y:100%;"
 					data-frame_0_mask="u:t;" data-frame_1="st:2680;sp:1360;sR:2680;" data-frame_1_mask="u:t;"
 					data-frame_999="o:0;st:w;sR:4960;" style="z-index:9;font-family:'Open Sans';">
-					Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Church. Join us and Praise the Lord Jesus.
+					{{-- Jesus is holy, loving, and worthy of all our worship and devotion. You will feel heaven in our Church. Join us and Praise the Lord Jesus. --}}
 				</rs-layer>
 				<rs-layer id="slider-1-slide-1-layer-16" class="res-slide-btn pop rev-btn" data-type="button"
 					data-color="rgba(255,255,255,1)" data-xy="x:c;y:m;yo:162px,130px,128px,117px;"
@@ -101,15 +101,15 @@
 							<div class="events-inner">
 								<div class="events-item">
 									<div class="media">
-										<div class="event-date me-4">Jan 3<span class="event-time">8.00 am</span>
+										<div class="event-date me-4">April 17<span class="event-time">8.00 am</span>
 										</div>
 										<div class="media-body">
 											<!-- Ministries Content -->
 											<div class="event-content">
 												<div class="event-title">
-													<h5><a href="event-details.html">Our Sponsorship Meetup Will Be Held Again</a></h5>
+													<h5><a href="#">Vacation Bible School (VBS)</a></h5>
 												</div>
-												<div class="read-more"><a href="event-details.html">Event Details</a></div>
+												<div class="read-more"><a href="#">Event Details</a></div>
 											</div>
 										</div>
 									</div>
@@ -124,13 +124,13 @@
 							<div class="events-inner">
 								<div class="events-item">
 									<div class="media">
-										<div class="event-date me-4">Feb 12<span class="event-time">7.00 am</span>
+										<div class="event-date me-4">July 30<span class="event-time">10.00 am</span>
 										</div>
 										<div class="media-body">
 											<!-- Ministries Content -->
 											<div class="event-content">
 												<div class="event-title">
-													<h5><a href="event-details.html">Event: Reflect The Community And Serving</a></h5>
+													<h5><a href="event-details.html">Confirmation classes</a></h5>
 												</div>
 												<div class="read-more"><a href="event-details.html">Event Details</a></div>
 											</div>
@@ -234,8 +234,7 @@
 						<div class="title-wrap margin-bottom-30">
 							<div class="section-title">
 								<span class="sub-title theme-color text-uppercase">About Us</span>
-								<h2 class="section-title margin-top-5">We are Taking Small Steps to Make
-									Earth Better Planet</h2>
+								<h2 class="section-title margin-top-5">We are taking small steps to serve others</h2>
 								<span class="border-bottom"></span>
 							</div>
 							<div class="pad-top-15">
@@ -256,7 +255,7 @@
 										</div>
 										<div class="feature-content">
 											<div class="feature-title relative margin-bottom-15">
-												<h4>Place Of Heaven</h4>
+												<h4>Place Of Fellowship</h4>
 											</div>
 											<p class="mb-0">Here, you will feel divinity, piety,
 												goodness, faith or right beliefs.</p>
@@ -323,7 +322,7 @@
 							<div class="title-wrap mb-0">
 								<div class="section-title typo-white margin-bottom-40">
 									<h2 class="title mb-3">Restoration and Refurbishment of St. John’s Church, Bangalore – February 2022</h2>
-									<span class="dancing-text">“Track the progress”</span>
+									<span class="dancing-text">{{-- “Track the progress” --}}</span> 
 								</div>
 								<div class="get-quote-btn">
 									<a class="btn btn-default" href="{{ route('donate') }}" title="Donate">Donate</a>
@@ -442,7 +441,7 @@
 							<div class="title-wrap mb-0">
 								<div class="section-title">
 									<span class="sub-title theme-color text-uppercase">Get In Touch</span>
-									<h2 class="section-title margin-top-5">Don't hesitate Contact Us</h2>
+									<h2 class="section-title margin-top-5">Contact Us</h2>
 									<span class="border-bottom"></span>
 								</div>
 								<div class="pad-top-15">
@@ -460,168 +459,10 @@
 		</section>
 		<!-- Contact Form Section End -->
 		<!-- Blog Section -->
-		<section class="blog-section pad-top-50 pad-bottom-95">
-			<div class="container">
-				<!-- Blog Wrap -->
-				<div class="row">
-					<div class="col-md-12">
-						<div class="title-wrap text-center">
-							<div class="section-title">
-								<span class="sub-title theme-color text-uppercase">Our Blog</span>
-								<h2 class="section-title margin-top-5">Latest Posts</h2>
-								<span class="border-bottom center"></span>
-							</div>
-						</div>
-						<div class="row">
-							<!--Blog Main Slider-->
-							<div class="owl-carousel blog-main-wrapper blog-style-1" data-loop="1" data-nav="0"
-								data-dots="1" data-autoplay="0" data-autoplaypause="1" data-autoplaytime="5000"
-								data-smartspeed="1000" data-margin="30" data-items="3" data-items-tab="2"
-								data-items-mob="1">
-								<!--Item-->
-								<div class="item">
-									<!--Blog Inner-->
-									<div class="blog-inner">
-										<div class="blog-thumb relative">
-											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
-												width="768" height="600" alt="blog-img" />
-											<div class="top-meta">
-												<ul class="top-meta-list">
-													<li>
-														<div class="post-date"><a href="blog-single.html"><i
-																	class="ti-calendar"></i> Oct 21,
-																2019</a></div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="blog-details">
-											<div class="blog-title">
-												<h4 class="margin-bottom-10"><a href="blog-single.html"
-														class="blog-name">Giving Back – Uganda Training
-														Centers</a></h4>
-											</div>
-											<div class="post-desc mt-2">
-												<div class="blog-link">
-													<a target="_blank" href="blog-single.html"
-														class="link font-w-500">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Blog Inner Ends-->
-								</div>
-								<!--Item Ends-->
-								<!--Item-->
-								<div class="item">
-									<!--Blog Inner-->
-									<div class="blog-inner">
-										<div class="blog-thumb relative">
-											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
-												width="768" height="600" alt="blog-img" />
-											<div class="top-meta">
-												<ul class="top-meta-list">
-													<li>
-														<div class="post-date"><a href="blog-single.html"><i
-																	class="ti-calendar"></i> Oct 21,
-																2019</a></div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="blog-details">
-											<div class="blog-title">
-												<h4 class="margin-bottom-10"><a href="blog-single.html"
-														class="blog-name">Spirit Of The Lord Is, From The
-														New Life</a></h4>
-											</div>
-											<div class="post-desc mt-2">
-												<div class="blog-link">
-													<a target="_blank" href="blog-single.html"
-														class="link font-w-500">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Blog Inner Ends-->
-								</div>
-								<!--Item Ends-->
-								<!--Item-->
-								<div class="item">
-									<!--Blog Inner-->
-									<div class="blog-inner">
-										<div class="blog-thumb relative">
-											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
-												width="768" height="600" alt="blog-img" />
-											<div class="top-meta">
-												<ul class="top-meta-list">
-													<li>
-														<div class="post-date">
-															<a href="blog-single.html">
-																<i class="ti-calendar"></i> Apr 16, 2023
-															</a>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="blog-details">
-											<div class="blog-title">
-												<h4 class="margin-bottom-10"><a href="blog-single.html"
-														class="blog-name">Confirmation classes starting on 16.4.2023</a></h4>
-											</div>
-											<div class="post-desc mt-2">
-												<div class="blog-link">
-													<a target="_blank" href="blog-single.html"
-														class="link font-w-500">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Blog Inner Ends-->
-								</div>
-								<!--Item Ends-->
-								<!--Item-->
-								<div class="item">
-									<!--Blog Inner-->
-									<div class="blog-inner">
-										<div class="blog-thumb relative">
-											<img src="{{ asset("images/blog/blog-grid/blog-grid2.jpg") }}" class="img-fluid"
-												width="768" height="600" alt="blog-img" />
-											<div class="top-meta">
-												<ul class="top-meta-list">
-													<li>
-														<div class="post-date"><a href="blog-single.html"><i
-																	class="ti-calendar"></i> Oct 19,
-																2019</a></div>
-													</li>
-												</ul>
-											</div>
-										</div>
-										<div class="blog-details">
-											<div class="blog-title">
-												<h4 class="margin-bottom-10"><a href="blog-single.html"
-														class="blog-name">Pray for Help to Save Mattia’s
-														Life</a></h4>
-											</div>
-											<div class="post-desc mt-2">
-												<div class="blog-link">
-													<a target="_blank" href="blog-single.html"
-														class="link font-w-500">Read More</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!--Blog Inner Ends-->
-								</div>
-								<!--Item Ends-->
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- Blog Wrap -->
-			</div>
-		</section>
+		@component('zegen.components.post_list01', [
+			'posts' => \App\Models\WebsitePost::where('website_id', config('app.site_id'))->limit(4)->get(),
+		])
+		@endcomponent
 		<!-- Blog Section End -->
 	</div>
 </div>

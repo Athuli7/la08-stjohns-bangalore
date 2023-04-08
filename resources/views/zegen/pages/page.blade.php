@@ -50,7 +50,7 @@
 									<br>
 									<br>
 									<!-- Row -->
-									<div class="row zoom-gallery">
+									{{-- <div class="row zoom-gallery">
 										<!-- Col -->
 										<div class="col-md-4">
 											<div class="ministries-thumb relative">
@@ -84,14 +84,14 @@
 												</a>
 											</div>
 										</div>
-									</div>
+									</div> --}}
 									<!-- Row -->
 								</div>
 								<!-- Col -->
 							</div>
 							<!-- Row 2 -->
 							<!-- Row 3 -->
-							<div class="row pad-top-85">
+							{{-- <div class="row pad-top-85">
 								<div class="custom-post-nav">
 									<div class="prev-nav-link">
 										<a class="btn btn-default prev" href="womens-ministry.html"><i
@@ -100,7 +100,7 @@
 										</a>
 									</div>
 								</div>
-							</div>
+							</div> --}}
 							<!-- Row 3 -->
 						</div>
 						<!-- Col -->
